@@ -60,7 +60,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: "img/toast-social-card.png",
+      image: "img/typesafe-custom-event-social-card",
       footer: {
         style: "dark",
         links: [
