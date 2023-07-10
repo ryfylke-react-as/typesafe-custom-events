@@ -1,18 +1,22 @@
 ---
 slug: /
 sidebar_position: 1
-title: Introduction
+title: Docs
 ---
 
 # Typesafe CustomEvents
 
-> Lets you easily set up typesafe `CustomEvent` channels in Typescript.
+> Lets you easily set up typesafe [`CustomEvent`](https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent) channels in Typescript.
 
 ## Install
+
+💾 ~**0.67KB** minified
 
 ```bash
 npm i typesafe-custom-events
 ```
+
+You can also alternatively copy/paste the source directly from [here](#source).
 
 ## Use
 
@@ -30,6 +34,8 @@ type Toast = {
 
 const toastChannel = new CustomEventChannel<Toast>();
 ```
+
+By passing a generic, you enforce a certain type for the custom event messages.
 
 ### Listening for new events
 
@@ -53,6 +59,8 @@ toastChannel.send({
 ```
 
 ### Reference
+
+A `CustomEventChannel` instance contains the following properties:
 
 - **send** `(event: T) => void` Send event to channel
 - **subscribe** `(onEvent: ((onEvent) => void)) => UnsubscribeFunction` Subscribes to the given channel
