@@ -1,0 +1,38 @@
+:root {
+  --ifm-color-primary: #852e6b;
+  --ifm-color-primary-dark: #782967;
+  --ifm-color-primary-darker: #712758;
+  --ifm-color-primary-darkest: #5d205a;
+  --ifm-color-primary-light: #92338d;
+  --ifm-color-primary-lighter: #993599;
+  --ifm-color-primary-lightest: #a23cad;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme="dark"] {
+  --ifm-color-primary: #c2257b;
+  --ifm-color-primary-dark: #af2174;
+  --ifm-color-primary-darker: #71274e;
+  --ifm-color-primary-darkest: #5d204c;
+  --ifm-color-primary-light: #92337a;
+  --ifm-color-primary-lighter: #993576;
+  --ifm-color-primary-lightest: #a73cad;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.navbar {
+  background: linear-gradient(350deg, #e8e8f2, #fee2fd);
+}
+
+[data-theme="dark"] .navbar {
+  background: linear-gradient(350deg, #1b1b1d, #2e262d);
+}
+
+.alert--success {
+  --ifm-alert-background-color: #f6f8fa;
+}
+[data-theme="dark"] .alert--success {
+  --ifm-alert-background-color: #282a36;
+}
