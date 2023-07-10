@@ -84,10 +84,6 @@ const config = {
                 label: "NPM",
                 href: "https://www.npmjs.com/package/typesafe-custom-events",
               },
-              {
-                label: "Demo (CodeSandbox)",
-                href: "https://codesandbox.io/s/happy-orla-1hi1k0",
-              },
             ],
           },
           {

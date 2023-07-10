@@ -7,6 +7,7 @@
   --ifm-color-primary-lighter: #993599;
   --ifm-color-primary-lightest: #a23cad;
   --ifm-code-font-size: 95%;
+  --ifm-background-color: #faf8ff !important;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
@@ -19,15 +20,17 @@
   --ifm-color-primary-light: #92337a;
   --ifm-color-primary-lighter: #993576;
   --ifm-color-primary-lightest: #a73cad;
+  --ifm-background-color: #16102c !important;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
 .navbar {
-  background: linear-gradient(350deg, #e8e8f2, #fee2fd);
+  background: #16102c;
+  color: #f9f9f9;
 }
 
 [data-theme="dark"] .navbar {
-  background: linear-gradient(350deg, #1b1b1d, #2e262d);
+  background: #16102c;
 }
 
 .alert--success {
@@ -35,4 +38,9 @@
 }
 [data-theme="dark"] .alert--success {
   --ifm-alert-background-color: #282a36;
+}
+
+.footer,
+.footer-dark {
+  --ifm-footer-background-color: #120e21;
 }
