@@ -14,7 +14,7 @@ const config = {
   favicon: "img/logo.png",
 
   // Set the production url of your site here
-  url: "https://toast.ryfylke.dev",
+  url: "https://typesafe-custom-events.ryfylke.dev",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
@@ -46,7 +46,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/ryfylke-react-as/toast/tree/master/docs/",
+            "https://github.com/ryfylke-react-as/typesafe-custom-events/tree/master/docs/",
         },
         blog: false,
         theme: {
@@ -78,11 +78,11 @@ const config = {
             items: [
               {
                 label: "GitHub",
-                href: "https://github.com/ryfylke-react-as/toast",
+                href: "https://github.com/ryfylke-react-as/typesafe-custom-events",
               },
               {
                 label: "NPM",
-                href: "https://www.npmjs.com/package/@ryfylke-react/toast",
+                href: "https://www.npmjs.com/package/typesafe-custom-events",
               },
               {
                 label: "Demo (CodeSandbox)",
