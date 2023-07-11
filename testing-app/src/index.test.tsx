@@ -23,13 +23,29 @@ describe("CustomEventChannel", () => {
     expect(channel.subscriberCount).toBe(2);
   });
 
-  test("also receives manually emitted events", async () => {
+  test("receives manually emitted events", async () => {
     const channel = new CustomEventChannel<string>("my-channel");
     const handler = vi.fn();
     channel.subscribe(handler);
-    document.dispatchEvent(
+    globalThis.dispatchEvent(
       new CustomEvent(channel.name, { detail: "test-event" })
     );
     expect(handler).toBeCalledTimes(1);
+  });
+
+  test("can use custom target for event emitting ", async () => {
+    const target = new EventTarget();
+    const channel = new CustomEventChannel<string>(
+      "my-channel",
+      { target }
+    );
+    const handler = vi.fn();
+    channel.subscribe(handler);
+    target.dispatchEvent(
+      new CustomEvent(channel.name, { detail: "test-event" })
+    );
+    expect(handler).toBeCalledTimes(1);
+    channel.send("test-event");
+    expect(handler).toBeCalledTimes(2);
   });
 });
