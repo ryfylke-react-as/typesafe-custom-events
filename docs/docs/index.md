@@ -80,20 +80,6 @@ A `CustomEventChannel` instance contains the following properties:
 - **id** `string` A unique identifier for the channel
 - **subscriberCount** `number` The current number of subscribers to the channel
 
-### Node
-
-If you want to use this with Node, you need to [add a polyfill for `CustomEvent`](https://github.com/kumarharsh/custom-event-polyfill), and pass in an EventTarget when initializing the channel.
-
-```typescript
-const channel = new CustomEventChannel<MyType>(undefined, {
-  target: new EventTarget(),
-});
-```
-
-:::caution
-Use with Node has not been properly tested yet, but should in theory work when the above requirements are met.
-:::
-
 ## Source
 
 The following is the entire library source, if you prefer - you can copy/paste this into a file in your project.
