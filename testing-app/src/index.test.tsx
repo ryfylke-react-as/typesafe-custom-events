@@ -1,7 +1,7 @@
 import "@testing-library/dom";
 import "@testing-library/jest-dom";
 import { describe, expect, vi } from "vitest";
-import { CustomEventChannel } from "../../src/index";
+import { CustomEventChannel } from "../../dist/cjs/index";
 
 describe("CustomEventChannel", () => {
   test("should be able to send and receive events", async () => {
